@@ -30,7 +30,7 @@
 
 #main-btn {
     
-    background-color:darkorange;
+    background-color:orangered;
     
     
     
@@ -52,9 +52,9 @@ a {
     text-transform: uppercase;
     font-weight: 600;
     width: 13em;
-    height: 3em;
-    background-color: darkorange;
-    border-color: darkorange;
+    height: 2em;
+    background-color: orangered;
+    border-color: orangered;
     border-radius: 150px;
     border: 1px solid white;
     text-align:center;
