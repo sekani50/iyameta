@@ -1,0 +1,1220 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme|Exo">
+    <title>Place your order</title>
+    <link rel="stylesheet" href="oderingPage.css" />
+    <style>
+        @media (max-width:500px) {
+            body .first {
+                width:190%;
+            }
+            .container #second #first-table {
+                display: flex;
+                flex-wrap: wrap;
+                width: 190%;
+                justify-content: center;
+            }
+
+                .container #second #first-table #data {
+                    height: 250px;
+                    width: 15%;
+                    border: 1px solid black;
+                    margin-bottom: 2em;
+                    margin-right: 2em;
+                    font-size: 15px;
+                    text-align: center;
+                }
+
+            .container #second #first-table #data #portion {
+                font-size: 10px;
+                font-weight: 200;
+                font-style: italic;
+                text-align: center;
+                margin-right: -35px;
+            }
+
+            .container #second #naira {
+                margin-right: 5.2em;
+                margin-top: -3px;
+                font-weight: 600;
+            }
+
+            .container #second #first-table #data div {
+                cursor: pointer;
+                color: #fff;
+                background: orangered;
+                width: 50%;
+                height: 25px;
+                border-radius: 5px;
+                margin-top: 5em;
+                margin-left: 4em;
+            }
+
+                .container #second #first-table #data div #select {
+                    padding-top: 3px;
+                }
+            #slide-container #slide-image #sld-img {
+               height:300px;
+        }
+            .container #third {
+                margin-left:16em;
+            }
+
+            .container #third #submit {
+                margin-left:8em;
+            }
+            .container #fourth {
+                width:120%;
+                position:relative;
+                height:55em;
+                top:5%;
+                left:30%;
+            }
+            .container #fourth #fourth-text {
+            position:absolute;
+            top:10%;
+            left:1%;
+            width:110%;
+            height:90%;
+            font-size:20px;
+            text-align:center;
+            letter-spacing:2px;
+        }
+        .conatiner #fourth #fourth-text #clicked {
+            width:100%;
+            margin-bottom:2em;
+        }
+        .container #progress {
+            position:absolute;
+            top:50%;
+            left:55%;
+           
+            
+        }
+            }
+    
+            
+        body {
+         width:100%;
+         height:100%;
+         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+         overflow-x:hidden;
+        }
+        
+        h3 {
+            text-align: center;
+            margin-top: -1.9em;
+            font-style:italic;
+            color:#fff;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: -2.5em;
+            font-size: 50px;
+            letter-spacing: 0.1rem;
+            color: #fff;
+            font-family:"Acme", sans-serif;
+        }
+        .first {
+            margin-top: -2em;
+            margin-left:-9px;
+            width: 100%;
+            min-width:730px;
+            height: 150px;
+            background: orangered;
+        }
+
+        #logo {
+            width: 150px;
+            height: 150px;
+        }
+        #container {
+            width:100%;
+        }
+        #second {
+            width:100%;
+            left:1%;
+            height:50%;
+            position:absolute;
+            top:50%;
+           
+        }
+     
+        .sub {
+            position: sticky;
+            position: -webkit-sticky;
+            top: 0%;
+            z-index: 1;
+        }
+        #img {
+            width: 100px;
+            height: 100px;
+           
+            border-radius:50%;
+        }
+        #fd {
+            
+        }
+            #fd:hover, #portion:hover, #naira:hover {
+                text-decoration: underline;
+            }
+
+        #abt, #cnt {
+            float: right;
+        }
+
+        #abt, #cnt, #img {
+            clear: both;
+        }
+
+        #abt, #cnt {
+            margin-top: -3em;
+            padding-right: 20px;
+        }
+
+        #abt {
+            margin-right: 5em;
+        }
+        #first-table {
+            display:flex;
+            flex-wrap:wrap;
+            width:100%;
+            justify-content:center;
+
+
+        }
+       
+        #first-table #data {
+            height:250px;
+            width: 15%;
+            border:1px solid black;
+            margin-bottom:2em;
+            margin-right:2em;
+            font-size:15px;
+            text-align:center;
+        }
+         #portion {
+            font-size: 10px;
+            font-weight: 200;
+            font-style: italic;
+            text-align: center;
+            margin-right:-35px;
+           
+            
+        
+
+        }
+
+         #naira {
+             margin-right:5.2em;
+             margin-top:-3px;
+             font-weight:600;
+             
+           
+        
+            }
+        #first-table #data div {
+            cursor:pointer;
+            color:#fff;
+            background:orangered;
+            width:50%;
+            height:25px;
+            border-radius:5px;
+            margin-top:5em;
+            margin-left:4em;
+           
+           
+            
+        }
+        #first-table #data div #select {
+            padding-top:3px;
+        }
+        #first-table #data:hover {
+            transform: translate(0,2px);
+        }
+        /**/
+        
+      
+        /*#third {
+            position:absolute;
+            top:25%;
+            left:32%;
+            width:65%;
+            min-width:450px;
+        }*/
+        #third {
+            float: left;
+            margin-top: -88em;
+            margin-left: 20em;
+            width: 65%;
+            min-width: 450px;
+            
+        }
+        #third::after {
+            clear:both;
+        }
+        .subs {
+            background:red;
+            text-align:center;
+            color:#fff;
+            width:100%;
+            height:30px;
+        }
+        #second-table {
+            width:85%;
+            margin-top:-6px;
+        }
+        #second-table th {
+            background:orangered;
+            color:#fff;
+            text-align:center;
+            font-weight:700;
+            padding:2%;
+            font-family:"Exo", sans-serif;
+
+
+        }
+        #second-table td {
+            padding:2%;
+            font-family: sans-serif;
+    
+        }
+        #second-table td #btn {
+            border:0;
+            cursor:pointer;
+            margin-left:5px;
+            font-weight:500;
+            background:#fff;   
+        }
+        #second-table tr:hover {
+            background-color: #fff;
+            transform:translate(0,2px);
+        }
+        tr > td:last-child > button {
+            display: none;
+        }
+
+        tr:hover > td:last-child > button {
+            display: block;
+        }
+        #second-table td img {
+            width: 30px;
+            height: 30px;
+            border-radius:50%;
+            float:left;
+            margin-right:2px;
+            margin-right:10px;
+        }
+        #second-table td #text {
+            margin-left:10px;
+            float:left;
+            margin-top:6px;
+        }
+        #second-table td img::after,
+        #second-table td #text::after {
+            clear:both;
+        }
+        #second-table td input {
+            margin-left:3px;
+            width:40px;
+            height:20px
+        }
+
+        #third #no-sel {
+            width: 85%;
+            position:relative;
+            height: 350px;
+            background: #F3F0F0;
+        }
+        #third #no-sel p {
+            position:absolute;
+            top:40%;
+            left:35%;
+            color:#2A2121;
+            font-size:120%;
+            font-family:"Exo", sans-serif;
+        }
+        #forms {
+            display:none;
+        }
+        #forms input {
+            width:50%;
+            height:30px;
+            font-size:20px;
+            border:1px solid orange;
+          
+        }
+            #forms input:focus {
+                outline: none;
+                background:white;
+                border: 1px medium blue;
+                
+            }
+        #forms textarea {
+            width:80%;
+            height:100px;
+            border: 1px solid orange;
+        }
+        #forms textarea:focus {
+            outline:none;
+            border: 1px solid orange;
+        }
+        #slide-container {
+            position: relative;
+            width: 85%;
+            display: flex;
+        }
+        #slide-container .nxt,
+        #slide-container .prev {
+            position: absolute;
+            cursor: pointer;
+            position: absolute;
+            top: 45%;
+            width: auto;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            transition: all 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        #slide-image {
+            min-width: 90%;
+            min-height: 100%;
+            margin-left:2px;
+        }
+
+         #sld-img {
+             width: 100%;
+             height: 500px;
+             object-fit: cover;
+            }
+
+        #slide-container .prev:hover,
+        #slide-container .nxt:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+        }
+
+        #slide-container .prev {
+            left:0.5%
+        }
+
+        #slide-container .nxt {
+            left: 93%;
+        }
+        #slide-container .slide {
+            display: none;
+        }
+
+        .fade {
+            /*animation: fade 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;*/
+            animation: fade;
+            animation-duration: 1s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: 0.5
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+        #submit {
+            background:orangered;
+            color:#fff;
+            padding:12px;
+            text-transform:uppercase;
+            width:18em;
+            height:3em;
+            font-weight:600;
+            border-radius:6em;
+            border:0;
+            
+            margin-top:10em;
+            margin-left:20em;
+            cursor:pointer;
+            display:none;
+        }
+        #total-text {
+            text-align: center;
+            font-size: 120%;
+            letter-spacing: 2px;
+            font-weight: 300;
+            font-family: "Acme", sans-serif;
+            display:none;
+        }
+        #total {
+            text-decoration:underline;
+        }
+        #progress {
+            position:absolute;
+            top:50%;
+            left:45%;
+            display:none;
+            
+        }
+        .progress-image {
+            width: 40px;
+            
+            animation:rotation infinite linear;
+            animation-duration: 3s;
+            
+           
+        }
+        @keyframes rotation {
+            from {
+                transform:rotate(0deg);
+            }
+            to {
+                transform:rotate(359deg);
+            }
+        }
+        #fourth {
+            width: 100%;
+            background-image: url("icons/logo3.png");
+            background-size: 100% 100%;
+            height:55em;
+            display:none;
+            border:1px solid black;
+        }
+
+        #fourth #fourth-text {
+            position:absolute;
+            top:30%;
+            left:5%;
+            width:90%;
+            height:90%;
+            font-size:50px;
+            letter-spacing:2px;
+        }
+        #fourth #fourth-text #clicked {
+            width:100%;
+            margin-bottom:2em;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="first">
+        <img id="logo" src="icons/logo2.png" />  
+        <h1>Iya Meta Food</h1>
+        <h3 id="dd">Delivery around Ibadan</h3>
+
+        <h3 id="abt">About</h3> <h3 id="cnt">Contact</h3>
+
+
+    </div>
+    <div class="container">
+        <div id="second">
+            <div class="sub"></div>
+            <div id="first-table">
+                <div id="data">
+                    <img id="img" src="https://www.bhg.com/thmb/VAon3iCVgf56QMfV47HXyMi1HiM=/1244x1319/filters:fill(auto,1)/wooden-bowl-rice-CSMFcPYvqQA8toMotQsy6V-07fe33e060fc4392b6ff4611e3662a5e.jpg" alt="Rice" />
+                    <p id="fd">Rice</p>
+                    <p id="naira"><span>₦</span><span>200</span></p>
+                    <p id="portion"> per portion</p>
+                    <div>
+                        <p id="select">Add to cart</p>
+
+
+                    </div>
+                </div>
+
+                <div id="data">
+
+                    <img id="img" src="https://rnn.ng/wp-content/uploads/2021/06/Beans-1000x600.jpg" alt="Beans" />
+                    <p id="fd">Beans</p>
+                    <p id="naira"><span>₦</span><span>100</span></p>
+                    <p id="portion"> per portion</p>
+                    <div>
+                        <p id="select">Add to cart</p>
+
+
+                    </div>
+                </div>
+
+                <div id="data">
+
+                    <img id="img" src="https://www.thisisnotdietfood.com/wp-content/uploads/2021/11/southernbakedspaghetti-23.jpg" alt="Spaghetti" />
+                    <p id="fd">Spaghetti</p>
+                    <p id="naira"><span>₦</span><span>100</span></p>
+                    <p id="portion"> per portion</p>
+                    <div>
+                        <p id="select">Add to cart</p>
+
+
+                    </div>
+                </div>
+
+                <div id="data">
+                    <img id="img" src="https://afrifoodnetwork.com/wp-content/uploads/2017/04/plantain-500x450.jpg" alt="Plantain" />
+                    <p id="fd">Plantain</p>
+                    <p id="naira"><span>₦</span><span>50</span></p>
+                    <p id="portion"> per pieces</p>
+                    <div>
+                        <p id="select">Add to cart</p>
+
+                    </div>
+                </div>
+
+                <div id="data">
+                    <img id="img" src="https://i0.wp.com/besthomediet.com/wp-content/uploads/2020/09/Amala-food-picture.jpg?fit=398%2C265&ssl=1" alt="Black Amala" />
+                    <p id="fd">Black Amala</p>
+                    <p id="naira"><span>₦</span><span>100</span></p>
+                    <p id="portion"> per wrap</p>
+                    <div>
+                        <p id="select">Add to cart</p>
+
+                    </div>
+                </div>
+
+                <div id="data">
+                    <img id="img" src="https://i0.wp.com/kscuisine.com/wp-content/uploads/2020/02/plantain-fufu.jpg?fit=600%2C900&ssl=1&resize=350%2C200" alt="White Amala" />
+                    <p id="fd">White Amala</p>
+                    <p id="naira"><span>₦</span><span>100</span></p>
+                    <p id="portion"> per wrap</p>
+                    <div>
+                        <p id="select">Add to cart</p>
+
+
+                    </div>
+                </div>
+
+                <div id="data">
+                    <img id="img" src="https://miro.medium.com/max/523/1*OLUDyccuOMceT_3ohgON_w.jpeg" alt="Semo" />
+                    <p id="fd">Semo</p>
+                    <p id="naira"><span>₦</span><span>100</span></p>
+                    <p id="portion"> per wrap</p>
+                    <div>
+                        <p id="select">Add to cart</p>
+
+                    </div>
+                </div>
+
+                <div id="data">
+                    <img id="img" src="https://res.cloudinary.com/hsxfx8igq/image/upload/t_16x9_recipe_image,f_auto/v1595264776/Screenshot_2020-07-20_at_5.06.05_PM_uhlqh0.png" alt="Eba" />
+                    <p id="fd">Eba</p>
+                    <p id="naira"><span>₦</span><span>100</span></p>
+                    <p id="portion"> per wrap</p>
+                    <div>
+                        <p id="select">Add to cart</p>
+
+
+                    </div>
+                </div>
+
+                <div id="data">
+                    <img id="img" src="https://miro.medium.com/max/523/1*OLUDyccuOMceT_3ohgON_w.jpeg" alt="Fufu" />
+                    <p id="fd">Fufu</p>
+                    <p id="naira"><span>₦</span><span>100</span></p>
+                    <p id="portion"> per wrap</p>
+                    <div>
+                        <p id="select">Add to cart</p>
+
+
+                    </div>
+                </div>
+
+                <div id="data">
+                    <img id="img" src="https://miro.medium.com/max/523/1*OLUDyccuOMceT_3ohgON_w.jpeg" alt="PY" />
+                    <p id="fd">Pounded yam</p>
+                    <p id="naira"><span>₦</span><span>100</span></p>
+                    <p id="portion"> per wrap</p>
+                    <div>
+                        <p id="select">Add to cart</p>
+
+                    </div>
+                </div>
+
+                <div id="data">
+                    <img id="img" src="https://supermenueatery.com/wp-content/uploads/2020/05/fried-beef.jpg" alt="Beef" />
+                    <p id="fd">Beef</p>
+                    <p id="naira"><span>₦</span><span>100</span></p>
+                    <p id="portion"> per pieces</p>
+                    <div>
+                        <p id="select">Add to cart</p>
+
+                    </div>
+                </div>
+
+                <div id="data">
+                    <img id="img" src="https://drumstix.com.ng/wp-content/uploads/2020/04/Assorted.jpg" alt="Assorted" />
+                    <p id="fd">Assorted meat</p>
+                    <p id="naira"><span>₦</span><span>100</span></p>
+                    <p id="portion"> per pieces</p>
+                    <div>
+                        <p id="select">Add to cart</p>
+
+
+                    </div>
+                </div>
+
+                <div id="data">
+                    <img id="img" src="https://cdn.punchng.com/wp-content/uploads/2020/06/21120900/ponmo.jpg" alt="Ponmo" />
+                    <p id="fd">Ponmo</p>
+                    <p id="naira"><span>₦</span><span>100</span></p>
+                    <p id="portion"> per pieces</p>
+                    <div>
+                        <p id="select">Add to cart</p>
+
+
+                    </div>
+                </div>
+
+                <div id="data">
+                    <img id="img" src="https://www.9jafoodie.com/nigerian-style-fried-fish/dsc03658/" alt="Fried fish" />
+                    <p id="fd">Fried Fish</p>
+                    <p id="naira"><span>₦</span><span>400</span></p>
+                    <p id="portion"> per pieces</p>
+                    <div>
+                        <p id="select">Add to cart</p>
+
+                    </div>
+                </div>
+
+                <div id="data">
+                    <img id="img" src="https://mile12market.com/wp-content/uploads/2014/12/mile12_market_online-smoked-panla.png" alt="smoked Panla" />
+                    <p id="fd">Smoked Panla</p>
+                    <p id="naira"><span>₦</span><span>400</span></p>
+                    <p id="portion"> per pieces</p>
+                    <div>
+                        <p id="select">Add to cart</p>
+
+                    </div>
+                </div>
+
+                <div id="data">
+                    <img id="img" src="https://img-global.cpcdn.com/recipes/c301b20675d3e12c/1200x630cq70/photo.jpg" alt="Titus Fish" />
+                    <p id="fd">Titus Fish</p>
+                    <p id="naira"><span>₦</span><span>300</span></p>
+                    <p id="portion"> per pieces</p>
+                    <div>
+                        <p id="select">Add to cart</p>
+
+
+                    </div>
+                </div>
+
+                <div id="data">
+                    <img id="img" src="https://img-global.cpcdn.com/recipes/222e02e2f2c1a112/1200x630cq70/photo.jpg" alt="Goat Meat" />
+                    <p id="fd">Goat Meat</p>
+                    <p id="naira"><span>₦</span><span>700</span></p>
+                    <p id="portion"> per pieces</p>
+                    <div>
+                        <p id="select">Add to cart</p>
+
+
+                    </div>
+                </div>
+
+                <div id="data">
+                    <img id="img" src="https://sisijemimah.com/wp-content/uploads/2017/03/smoked-turkey-stew-5.jpg" alt="Turkey" />
+                    <p id="fd">Turkey</p>
+                    <p id="naira"><span>₦</span><span>2000</span></p>
+                    <p id="portion"> per pieces</p>
+                    <div>
+                        <p id="select">Add to cart</p>
+
+                    </div>
+                </div>
+
+                <div id="data">
+                    <img id="img" src="https://bustopbistro.ng/wp-content/uploads/2020/04/19-Boiled-egg.jpg" alt="Egg" />
+                    <p id="fd">Egg</p>
+                    <p id="naira"><span>₦</span><span>100</span></p>
+                    <p id="portion"> per pieces</p>
+                    <div>
+                        <p id="select">Add to cart</p>
+
+                    </div>
+                </div>
+
+                <div id="data">
+                    <img id="img" src="https://4.bp.blogspot.com/-cC23ATwNjAU/VxykezVxn3I/AAAAAAAAArs/ZrsWB0snvf4MTxLsx1KMbMSpMvKUICfWACLcB/s1600/nigerian%2Bfoods%2B%252847%2529.jpg" alt="Snail" />
+                    <p id="fd">Snail</p>
+                    <p id="naira"><span>₦</span><span>2500</span></p>
+                    <p id="portion"> per pieces</p>
+                    <div>
+                        <p id="select">Add to cart</p>
+
+                    </div>
+                </div>
+
+                <div id="data">
+                    <img id="img" src="https://5.imimg.com/data5/CP/EK/MY-96741/plastic-square-container-3600-ml-250x250.jpg" alt="Small Plate" />
+                    <p id="fd">Small Plate</p>
+                    <p id="naira"><span>₦</span><span>150</span></p>
+                    <p id="portion"> per portion</p>
+                    <div>
+                        <p id="select">Add to cart</p>
+
+                    </div>
+                </div>
+
+                <div id="data">
+                    <img id="img" src="https://5.imimg.com/data5/WC/ZB/IO/SELLER-2908576/medium-square-plastic-food-containers-1000x1000.jpg" alt="Big Plate" />
+                    <p id="fd">Big Plate</p>
+                    <p id="naira"><span>₦</span><span>200</span></p>
+                    <p id="portion"> per portion</p>
+                    <div>
+                        <p id="select">Add to cart</p>
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+
+        <div id="third">
+            <!--<div class="subs">
+        <h3>Selected Orders</h3>
+    </div>-->
+            <div id="slide-container">
+                <div id="slide-image" class="slide fade">
+                    <img id="sld-img" src="https://i0.wp.com/www.thepretendchef.com/wp-content/uploads/2016/09/vegetable-soup-1-5.jpg?fit=640%2C393&ssl=1" />
+                </div>
+                <div id="slide-image" class="slide fade">
+                    <img id="sld-img" src="https://img-global.cpcdn.com/recipes/a6f1cf8c9556ff3a/1200x630cq70/photo.jpg" />
+                </div>
+                <div id="slide-image" class="slide fade">
+                    <img id="sld-img" src="https://flikkymarket.ca/wp-content/uploads/2021/05/egu-1024x704-1.jpg" />
+                </div>
+                <div id="slide-image" class="slide fade">
+                    <img id="sld-img" src="https://ocdn.eu/pulscms-transforms/1/vHwktkqTURBXy8xMGU2MTFjNDAxMWE5NDk2ODE1ZjFjMzVjOGM1YzNmNS5qcGVnkpUDAA7NApTNAXOTBc0EsM0Cdg" />
+                </div>
+                <div id="slide-image" class="slide fade">
+                    <img id="sld-img" src="https://bigmamaspices.ng/wp-content/uploads/2021/04/unnamed-1.jpg" />
+                </div>
+                <div id="slide-image" class="slide fade">
+                    <img id="sld-img" src="https://media.istockphoto.com/photos/image-of-bowl-filled-with-homemade-chicken-biryani-garnished-with-picture-id1249944527?k=20&m=1249944527&s=612x612&w=0&h=zQre4zGIuo2_EypTDFCti6Wybf7j-jTs0eDsrm_BsaE=" />
+                </div>
+
+                <a href="#" class="prev" title="previous">&#10094</a>
+
+                <a href="#" class="nxt" title="next">&#10095</a>
+            </div>
+
+            <table id="second-table">
+                <tr>
+                    <th>Order</th>
+                    <th>Portion</th>
+                    <th>Price</th>
+                    <th>-</th>
+                </tr>
+                <!---<tr>
+                    <td><img src="" alt="grg" /> Smoked Panla</td>
+                    <td><input type="number" placeholder="portion" /></td>
+                    <td>200</td>
+                    <td><button><img src="icons/del.png" alt="del" width="10" height="10" /></button></td>
+                </tr>-->
+            </table>
+
+            <div id="no-sel">
+                <p>No item is selected yet</p>
+            </div>
+            
+            <p id="total-text">Total:<span id="total">₦0</span></p>
+
+            <form name="form1" id="forms">
+                <p id="p-no">Phone Number:</p>
+                <input type="tel" name="telephone" id="tele" />
+                <p id="loc">Location Address:</p>
+                <textarea id="txt" name="address" placeholder="Your location address"></textarea>
+
+            </form>
+
+            <button id="submit" onclick="addButton()">Preview & Save to cart</button>
+
+        </div>
+
+        <div id="fourth">
+
+            <!--
+
+     <div id="fourth-text">
+        <p id="clicked">Order</p>
+        <p id="clicked">Rice -------------------------------------- #200</p>
+        <p id="clicked">Rice -------------------------------------- #200</p>
+        <p id="clicked">Rice -------------------------------------- #200</p>
+        <p id="clicked">Total: #4567</p>
+        <p id="clicked">Tel. Number: 0804623829293</p>
+        <p id="clicked">Location Address: no 13, Amos adegboyega street, Agbowo</p>
+
+
+    </div>
+
+    -->
+
+        </div>
+        
+        <div id="progress">
+            <img class="progress-image" src="icons/progress-bar.png" />
+        </div>
+
+    </div>
+    
+
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll(".slide");
+       
+
+        const init = (n) => {
+            slides.forEach((slide) => {
+                slide.style.display = "none"
+               
+            })
+            slides[n].style.display = "block";
+            
+            //console.log(document.querySelector("#data").children[2].children[1].innerText);
+    
+        }
+        document.addEventListener("DOMContentLoaded", init(currentSlide));
+        const next = () => {
+    
+            currentSlide >= slides.length - 1 ? currentSlide = 0 : currentSlide++
+            init(currentSlide)
+        }
+
+        const prev = () => {
+            currentSlide <= 0 ? currentSlide = slides.length - 1 : currentSlide--
+            init(currentSlide)
+        }
+
+        document.querySelector(".nxt").addEventListener('click', next);
+
+        document.querySelector(".prev").addEventListener('click', prev);
+
+
+        setInterval(() => {
+            next()
+        }, 5000);
+
+        const nodeList = document.querySelectorAll("#data");
+
+        const cartArray = [];
+
+        const total = 0;
+
+        for (let i = 0; i < nodeList.length; i++) {
+            nodeList[i].addEventListener('click', function () {
+
+                const arr = [];
+
+                const table = document.getElementById("second-table");
+
+
+                document.getElementById("no-sel").style.display = "none";
+                document.getElementById("total-text").style.display = "block";
+
+
+
+
+
+                let foodImage = nodeList[i].firstElementChild.getAttribute('src');
+                console.log(foodImage);
+                let order = nodeList[i].children[1].innerText;
+                let price = nodeList[i].children[2].children[1].innerText;
+                //console.log(nodeList[i].children[2].children[1].innerText);
+                let portion = "<input type='number' id='getPortion' min='1' max='10' onfocusout='updatePrice(" + i + ")'  onclick='updatePrice(" + i + ")' />"
+
+                let button = "<button id='btn'><img src='icons/del.png' alt='del' onclick='deleteRow(" + i + ")'/></button>";
+
+                cartArray.push({ FoodImage: foodImage, Order: order, Price: price, Portion: portion, ID: "id" + i, Total: parseFloat(price) + total, Button: button })
+
+
+
+                let row = table.insertRow(1);
+
+
+                cellA = row.insertCell(0);
+                cellB = row.insertCell(1);
+                cellC = row.insertCell(2);
+                cellD = row.insertCell(3);
+
+                //cellA.innerHTML = "<img id='fdImg' src=''/>" + '<span id=text>' + order + '</span>';
+                //document.getElementById("fdImg").src = foodImage;
+              
+                //cellB.innerHTML = portion;
+                //cellC.innerHTML = '<span>₦</span><span>'+ price+'</span>';
+                //cellD.innerHTML = button;
+
+                //console.log(row);
+
+                cartArray.forEach((row, index) => {
+
+                    console.log(index.FoodImage);
+                 
+                    cellA.innerHTML = "<img id='fdImg' src='' />" + '<span id=text>' + row.Order + '</span>';
+                    
+                    document.getElementById("fdImg").src = foodImage;
+                    cellB.innerHTML = row.Portion;
+                    cellC.innerHTML = '<span>₦</span><span>' + row.Price + '</span>';
+                    cellD.innerHTML = row.Button;
+
+                }) 
+
+                //let imgsrc = document.querySelectorAll("#fdImg");
+
+                
+
+                /*imgsrc.forEach((src) => {
+                    src.setAttribute("src", cartArray.FoodImage);
+
+                })*/
+
+                console.log(row);
+
+
+                console.log(cartArray);
+
+
+                let tot = 0;
+                //console.log(cartArray[i].Total);
+                cartArray.forEach((obj) => {
+                    console.log(obj.Total);
+
+                    tot += obj.Total;
+
+
+                })
+                console.log(tot);
+                document.getElementById("total").innerText = "₦" + tot;
+
+               
+                for (const r of table.rows) {
+
+                    for (const c of r.cells) {
+
+                        arr.push(c.innerText);
+
+
+                    }
+                }
+         
+
+                for (ar of arr) {
+                    if (ar == "Small Plate" || ar == "Big Plate") {
+                        console.log("fbkdhfbdkfvjhdfivk");
+
+                        document.getElementById("forms").style.display = "block";
+                        document.getElementById("submit").style.display = "block";
+
+                        
+                        break;
+                    }
+
+                }
+
+
+               
+
+
+
+
+            })
+        }
+
+        console.log(cartArray);
+
+
+        function updatePrice(n) {
+
+            //get the input value
+            const val = event.target.value;
+            console.log(val);
+
+            //get the price parent
+            let inputData = event.target.parentNode.parentNode;
+            console.log(inputData);
+
+            // find the clicked box with its unique id
+            let find = cartArray.find(arr => arr.ID == "id" + n);
+            console.log(find.Price);
+
+            let initialPrice = find.Price;
+
+
+
+            // multiply initial with change in vlaue
+            let newPrice = initialPrice * val;
+            console.log(newPrice);
+
+            console.log(find.Total = newPrice);
+
+            //slot in the total price
+            totCalc(cartArray);
+
+
+
+            // check-up
+            //inputData.children[2].children[1].innerHTML = newPrice;
+            inputData.children[2].children[1].innerText = newPrice;
+
+
+
+
+        }
+
+
+        function deleteRow(n) {
+
+            // event.target will be the input element.
+            var td = event.target.parentNode;
+            console.log(td);
+            var tr = td.parentNode.parentNode;
+            console.log(tr)// the row to be removed
+            tr.parentNode.removeChild(tr);
+
+            let smallPlate = td.parentNode.parentNode.children[0].innerText;
+            let bigPlate = td.parentNode.parentNode.children[0].innerText;
+
+            if (smallPlate == "Small Plate" || bigPlate == "Big Plate") {
+
+                document.getElementById("forms").style.display = "none";
+                document.getElementById("submit").style.display = "none";
+            } 
+            // find the clicked box with its unique id
+            let find = cartArray.find(arr => arr.ID == "id" + n);
+            console.log(find.Price);
+
+            cartArray.splice(cartArray.findIndex(i => i.ID == "id" + n), 1);
+
+            //slot in the total price
+            totCalc(cartArray);
+        }
+
+
+
+        function totCalc(cart) {
+
+            let total = 0;
+            cart.forEach((arr) => {
+
+                total += arr.Total;
+            })
+
+            console.log(total);
+
+            // total price
+            document.getElementById("total").innerText = "₦" + total;
+
+        }
+
+
+        function addButton() {
+            event.preventDefault();
+
+            document.getElementById("second").style.display = "none";
+            document.getElementById("third").style.display = "none";
+
+            // get the fourth div
+            let fourthDiv = document.getElementById("fourth");
+
+            //display progress bar
+            let progressDiv = document.getElementById("progress");
+            progressDiv.style.display = "block";
+            fourthDiv.style.display = "none";
+
+            setTimeout(() => {
+                hide(progressDiv);
+            }, 1000);
+
+            const hide = (el) => {
+                el.style.display = "none";
+                fourthDiv.style.display = "block";
+            }
+
+            
+
+            //create new div for text
+            let fourthDivText = document.createElement("div");
+            fourthDivText.setAttribute("id", "fourth-text");
+            fourthDiv.appendChild(fourthDivText);
+
+            // create p tag for text
+            let pTag = document.createElement("p");
+            pTag.setAttribute("id", "clicked");
+
+            let order = document.createTextNode("Orders");
+            pTag.appendChild(order);
+
+            fourthDivText.appendChild(pTag);
+
+            cartArray.forEach((arr) => {
+
+                // create ptag for orders
+                let pTag = document.createElement("p");
+                pTag.setAttribute("id", "clicked");
+
+                let text = document.createTextNode(arr.Order + " ----------------------- " +"₦"+arr.Total);
+                console.log(arr.Order + "------------------" + arr.Total);
+
+                pTag.appendChild(text);
+
+                fourthDivText.appendChild(pTag);
+
+            })
+
+            let pTagA = document.createElement("p");
+            pTagA.setAttribute("id", "clicked");
+
+            let overAllTotal = document.getElementById("total");
+
+            let totalText = document.createTextNode("Total: " + overAllTotal.innerText);
+
+            pTagA.appendChild(totalText);
+
+            fourthDivText.appendChild(pTagA);
+
+            let tel = document.getElementById("tele");
+            let address = document.getElementById("txt");
+
+            let pTagB = document.createElement("p");
+            pTagB.setAttribute("id", "clicked");
+
+            let PhoneNo = document.createTextNode("Tel. Number: " + tel.value) 
+
+            pTagB.appendChild(PhoneNo);
+
+            let pTagC = document.createElement("p");
+            pTagC.setAttribute("id", "clicked");
+
+            let locAddress = document.createTextNode("Location Address: " + address.value) 
+
+            pTagC.appendChild(locAddress);
+
+            fourthDivText.appendChild(pTagB);
+
+
+            fourthDivText.appendChild(pTagC);
+
+
+           
+
+
+
+            
+
+
+        }
+
+    </script>
+</body>
+</html>
